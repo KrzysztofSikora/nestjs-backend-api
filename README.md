@@ -1,8 +1,4 @@
 
-![Untitleds](https://github.com/KrzysztofSikora/nestjs-backend-api/assets/17338476/d863226d-270a-4369-b7f0-a8406150ccee)
-
-![Untitled](https://github.com/KrzysztofSikora/nestjs-backend-api/assets/17338476/f2c278d9-3c90-499b-b581-a927f4bc46ec)
-
 ## 🍀 Stacks
 
 To build this project using the amazing stack including:
