@@ -1,0 +1,42 @@
+# Docker Compose Configuration
+# visit https://docs.docker.com/compose/
+
+version: '3.3'
+services:
+  # app service for your backend
+  app:
+    container_name: backend
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_NAME: admin
+      DATABASE_USER: test
+      DATABASE_PASS: testPassword
+      DATABASE_URI: mongodb://database:27017
+
+
+    ports:
+      - '4000:4000'
+    depends_on:
+      - database
+#      - data-loader
+  # start the mongodb service as container
+  database:
+    image: mongo:6.0
+    container_name: mongodb
+    restart: always
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: test
+      MONGO_INITDB_ROOT_PASSWORD: testPassword
+
+#  data-loader:
+#    image: mongo:6.0
+#    container_name: data-loader
+#    command: mongorestore --host database --port 27017 --username test --password testPassword --authenticationDatabase admin --db your_database_name --drop /data/db
+#    volumes:
+#      - ./mongo-seed:/data/db
+#    depends_on:
+#      - database

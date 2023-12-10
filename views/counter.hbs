@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Counter</title>
+  <script src="/socket.io.js"></script>
+  <script>
+    const itself = 1;
+    const socket = io('http://localhost:4000');
+    socket.on('userCount', (count) => {
+      document.getElementById('userCount').innerText = `Current Users: ${count-itself}`;
+    });
+  </script>
+</head>
+<body>
+<h1>Counter</h1>
+<p id="userCount">Current Users: 0</p>
+</body>
+</html>
