@@ -21,4 +21,8 @@ export class LocationController {
   listLocation() {
     return this.locationService.listLocation()
   }
+  @Get('/seed')
+  async seedLocation() {
+    return await this.locationService.seedLocation()
+  }
 }

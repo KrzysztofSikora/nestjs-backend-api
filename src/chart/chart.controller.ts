@@ -12,4 +12,8 @@ export class ChartController {
   async chart() {
     return await this.chartService.findChart()
   }
+  @Get('/seed')
+  async seedChart() {
+    return await this.chartService.seedChart()
+  }
 }
