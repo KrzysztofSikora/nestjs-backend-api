@@ -61,11 +61,13 @@ docker start mongodb
 ````
 1. Run app locally
 
-2. Import database dump file
+2. Load mock by enpoints 
 
 ```
-works
+/v1/locations/seed - for load locations
+/v1/chart/seed - for load data for chart
 ```
+
 Documentation
 ````localhost:4000/api is swagger````
 <br/>
