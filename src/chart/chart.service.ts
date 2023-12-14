@@ -8,56 +8,43 @@ import { LocationPayload } from '../location/model/location.payload'
 const mockChart = [
   {
     label: 'Transmission',
-    data: [50, 50, 50, 50, 50, 50, 50, 50, 50],
-    backgroundColor: 'rgba(227,110,16,0.1)',
-    borderColor: 'rgba(255, 99, 132, 1)',
-    borderWidth: 1
+    data: [50, 50, 50, 50, 50, 50, 50, 50],
+    backgroundColor: 'rgba(242,242,243,0.1)'
   },
   {
-    label: 'Stuffiness',
-    data: [12, 12, 12, 12, 12, 12, 12, 12],
-    backgroundColor: 'rgba(227,110,16,0.2)',
-    borderColor: 'rgba(255, 99, 132, 1)',
-    borderWidth: 1
+    label: 'Stuffines',
+    data: [20, 5, 13, 20, 5, 10, 15, 21],
+    backgroundColor: 'rgba(99,107,255,0.7)'
   },
   {
     label: 'Discomfort',
-    data: [20, 20, 20, 20, 20, 20, 20, 20],
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgba(255, 99, 132, 1)',
-    borderWidth: 1
+    data: [32, 8, 25, 25, 12, 25, 21, 12],
+    backgroundColor: 'rgba(99,107,255,0.6)'
   },
   {
     label: 'Humidity',
-    data: [30, 30, 30, 30, 30, 30, 30, 30],
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgba(255, 99, 132, 1)',
-    borderWidth: 1
+    data: [12, 12, 12, 12, 12, 12, 12, 12],
+    backgroundColor: 'rgba(209,201,198)'
   },
   {
     label: 'Pollution',
-    data: [40, 40, 40, 40, 40, 40, 40, 40],
-    backgroundColor: 'rgba(99,255,185,0.2)',
-    borderColor: 'rgb(8,16,15)',
-    borderWidth: 2
+    data: [20, 20, 20, 20, 20, 20, 20, 20],
+    backgroundColor: 'rgba(211, 198, 192, 0.6)'
   },
   {
     label: 'Temperature',
-    data: [32, 8, 25, 25, 10, 25, 21, 10],
-    backgroundColor: 'rgba(99,107,255,0.8)',
-    borderColor: 'rgb(41,56,128)',
-    borderWidth: 5,
-    borderSkipped: false
+    data: [30, 30, 30, 30, 30, 30, 30, 30],
+    backgroundColor: 'rgba(231, 221, 216, 0.6)'
   },
   {
     label: 'CO2',
-    data: [20, 5, 13, 20, 5, 10, 15, 21],
-    backgroundColor: 'rgba(99,107,255,0.9)'
+    data: [40, 40, 40, 40, 40, 40, 40, 40],
+    backgroundColor: 'rgba(233,232,232,0.2)'
   },
   {
     label: 'Density',
     data: [50, 50, 50, 50, 50, 50, 50, 50],
-    backgroundColor: 'rgba(99,107,255,0.1)'
+    backgroundColor: 'rgba(242,242,243,0.1)'
   }
 ]
 @Injectable()
